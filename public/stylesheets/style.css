@@ -1,0 +1,43 @@
+#container {
+	text-align: justify;
+}
+#container > div {
+	width: 300px; /* Declare your value. Can be in relative units. */
+	display: inline-block;
+	vertical-align: middle;
+
+	/* IE fix. */
+	*display: inline;
+	zoom: 1;
+}
+#container:after {
+	content: "";
+	width: 100%;
+	display: inline-block;
+}
+
+#description{
+  margin-top: 20px;
+}
+
+#separator{
+  height: 5px;
+  background-color: #e6f2ff;
+  margin-top: 30px;
+}
+
+#separatorTwo{
+  height: 5px;
+  background-color: #e6f2ff;
+  margin-bottom: 30px;
+}
+
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0;
+}
+
+a {
+  color: #00B7FF;
+}

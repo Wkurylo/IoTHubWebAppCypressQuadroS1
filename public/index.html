@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <title>Azure MQTT Quadro - Real Time Demo</title>
+    <script src="javascripts/jquery-2.1.4.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="javascripts/Chart.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="javascripts/index.js" type="text/javascript" charset="utf-8"></script>
+    <link href="stylesheets/style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="container">
+    <div>
+      <a id="single_image" target="_blank" href="https://www.arrow.com/">
+        <img src="images/arrow.png" alt="Arrow Logo"/>
+      </a>
+    </div>
+    <div>
+      <a id="single_image" target="_blank" href="https://www.arrow.com/en/products/sh-pcbm-1gc/arrow-development-tools/">
+        <img src="images/quadro.jpg" alt="Quadro Board"/>
+      </a>
+    </div>
+    <div>
+      <a id="single_image" target="_blank" href="http://www.cypress.com/">
+        <img src="images/cypress.png" alt="Cypress Logo"/>
+      </a>
+    </div>
+  </div>
+
+  <div id="separator"></div>
+
+  <div id="description">
+		<h3>Technical overview</h3>
+		<ul>
+			<li><span>IoT device in use :<b>Cypress Quadro</b></span>
+      <li><span>IoT device is sending data(JSON) directly to a IoT Hub endpoint (via cloud gateway), hosted on <b>Microsoft Azure</b>. To connect, device is using MQTT library</span>
+			<li><span>Azure IoT Hub provides support for the AMQP 1.0 with optional WebSocket support, MQTT 3.1.1 and native HTTP 1.1 over TLS protocols</span>
+			<li><span>Data from IoT Hub are sent to Web App hosted on Azure via IoT Hub Endpoint</span>
+      <li><span>On the Web App we deploy/upload custom NodeJS Application from Git (HTML/CSS/JS files)</span>
+		</ul>
+	</div>
+
+  <div id="separatorTwo"></div>
+
+  <canvas id="myChart" width="400" height="150"></canvas>
+</body>
+
+</html>
